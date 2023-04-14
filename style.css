@@ -30,7 +30,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 80%;
     height: 100%;
 }
 
@@ -114,12 +114,21 @@ path {
     fill-rule: evenodd;
 }
 
+@media (max-width: 1400px) {
+    .controls {
+        min-width: 300px;
+    }
+    .visualization {
+        width: 70%;
+    }
+}
+
 @media (max-width: 1200px) {
     .controls {
         min-width: 300px;
     }
     .visualization {
-        width: 80%;
+        width: 50%;
     }
 }
 
@@ -135,32 +144,5 @@ path {
     }
     .visualization {
         width: 100%;
-    }
-}
-
-/* Styles for mobile devices */
-@media (max-width: 480px) {
-    body {
-        flex-direction: column;
-    }
-    .controls {
-        position: static;
-        min-width: 100%;
-        height: auto;
-        padding: 10px;
-    }
-    .visualization {
-        width: 100%;
-        margin-top: 20px;
-    }
-    h1 {
-        font-size: 24px;
-    }
-    p {
-        font-size: 14px;
-    }
-    button,
-    select {
-        font-size: 12px;
     }
 }
