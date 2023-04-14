@@ -1,0 +1,481 @@
+{
+    "name": "Zodiac Sign",
+    "children": [
+        {
+            "name": "Earth",
+            "children": [
+                {
+                    "name": "Taurus",
+                    "size": 100,
+                    "children": [
+                        {
+                            "name": "Culture Leader",
+                            "size": 40.19607843
+                        },
+                        {
+                            "name": "Famous People",
+                            "size": 6.862745098
+                        },
+                        {
+                            "name": "Great Body",
+                            "size": 1.960784314
+                        },
+                        {
+                            "name": "Focus Actuality",
+                            "size": 14.70588235
+                        },
+                        {
+                            "name": "Famous People",
+                            "size": 15.68627451
+                        },
+                        {
+                            "name": "Lots Followers",
+                            "size": 2.941176471
+                        },
+                        {
+                            "name": "Popular Friends",
+                            "size": 4.901960784
+                        },
+                        {
+                            "name": "All Above",
+                            "size": 12.74509804
+                        }
+                    ]
+                },
+                {
+                    "name": "Virgo",
+                    "percent": 100,
+                    "children": [
+                        {
+                            "name": "Culture Leader",
+                            "size": 28.68217054
+                        },
+                        {
+                            "name": "Famous People",
+                            "size": 12.40310078
+                        },
+                        {
+                            "name": "Great Body",
+                            "size": 4.651162791
+                        },
+                        {
+                            "name": "Focus Actuality",
+                            "size": 19.37984496
+                        },
+                        {
+                            "name": "Famous People",
+                            "size": 10.07751938
+                        },
+                        {
+                            "name": "Lots Followers",
+                            "size": 2.325581395
+                        },
+                        {
+                            "name": "Popular Friends",
+                            "size": 3.100775194
+                        },
+                        {
+                            "name": "All Above",
+                            "size": 19.37984496
+                        }
+                    ]
+                },
+                {
+                    "name": "Capricorn",
+                    "size": 100,
+                    "children": [
+                        {
+                            "name": "Culture Leader",
+                            "size": 32.35294118
+                        },
+                        {
+                            "name": "Famous People",
+                            "size": 8.823529412
+                        },
+                        {
+                            "name": "Great Body",
+                            "size": 3.921568627
+                        },
+                        {
+                            "name": "Focus Actuality",
+                            "size": 17.64705882
+                        },
+                        {
+                            "name": "Famous People",
+                            "size": 11.76470588
+                        },
+                        {
+                            "name": "Lots Followers",
+                            "size": 2.941176471
+                        },
+                        {
+                            "name": "Popular Friends",
+                            "size": 2.941176471
+                        },
+                        {
+                            "name": "All Above",
+                            "size": 19.60784314
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Air",
+            "children": [
+                {
+                    "name": "Gemini",
+                    "size": 100,
+                    "children": [
+                        {
+                            "name": "Culture Leader",
+                            "size": 41.17647059
+                        },
+                        {
+                            "name": "Famous People",
+                            "size": 5.882352941
+                        },
+                        {
+                            "name": "Great Body",
+                            "size": 4.901960784
+                        },
+                        {
+                            "name": "Focus Actuality",
+                            "size": 10.78431373
+                        },
+                        {
+                            "name": "Famous People",
+                            "size": 4.901960784
+                        },
+                        {
+                            "name": "Lots Followers",
+                            "size": 2.941176471
+                        },
+                        {
+                            "name": "Popular Friends",
+                            "size": 4.901960784
+                        },
+                        {
+                            "name": "All Above",
+                            "size": 24.50980392
+                        }
+                    ]
+                },
+                {
+                    "name": "Libra",
+                    "size": 100,
+                    "children": [
+                        {
+                            "name": "Culture Leader",
+                            "size": 35.06493506
+                        },
+                        {
+                            "name": "Famous People",
+                            "size": 11.68831169
+                        },
+                        {
+                            "name": "Great Body",
+                            "size": 1.298701299
+                        },
+                        {
+                            "name": "Focus Actuality",
+                            "size": 27.27272727
+                        },
+                        {
+                            "name": "Famous People",
+                            "size": 12.98701299
+                        },
+                        {
+                            "name": "Lots Followers",
+                            "size": 0.0
+                        },
+                        {
+                            "name": "Popular Friends",
+                            "size": 2.597402597
+                        },
+                        {
+                            "name": "All Above",
+                            "size": 9.090909091
+                        }
+                    ]
+                },
+                {
+                    "name": "Aquarius",
+                    "size": 100,
+                    "children": [
+                        {
+                            "name": "Culture Leader",
+                            "size": 38.01652893
+                        },
+                        {
+                            "name": "Famous People",
+                            "size": 6.611570248
+                        },
+                        {
+                            "name": "Great Body",
+                            "size": 1.652892562
+                        },
+                        {
+                            "name": "Focus Actuality",
+                            "size": 18.18181818
+                        },
+                        {
+                            "name": "Famous People",
+                            "size": 9.917355372
+                        },
+                        {
+                            "name": "Lots Followers",
+                            "size": 0.826446281
+                        },
+                        {
+                            "name": "Popular Friends",
+                            "size": 1.652892562
+                        },
+                        {
+                            "name": "All Above",
+                            "size": 23.14049587
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Water",
+            "children": [
+                {
+                    "name": "Cancer",
+                    "size": 100,
+                    "children": [
+                        {
+                            "name": "Culture Leader",
+                            "size": 33.00970874
+                        },
+                        {
+                            "name": "Famous People",
+                            "size": 9.708737864
+                        },
+                        {
+                            "name": "Great Body",
+                            "size": 3.883495146
+                        },
+                        {
+                            "name": "Focus Actuality",
+                            "size": 16.50485437
+                        },
+                        {
+                            "name": "Famous People",
+                            "size": 11.65048544
+                        },
+                        {
+                            "name": "Lots Followers",
+                            "size": 1.941747573
+                        },
+                        {
+                            "name": "Popular Friends",
+                            "size": 4.854368932
+                        },
+                        {
+                            "name": "All Above",
+                            "size": 18.44660194
+                        }
+                    ]
+                },
+                {
+                    "name": "Scorpio",
+                    "size": 100,
+                    "children": [
+                        {
+                            "name": "Culture Leader",
+                            "size": 37.81512605
+                        },
+                        {
+                            "name": "Famous People",
+                            "size": 8.403361345
+                        },
+                        {
+                            "name": "Great Body",
+                            "size": 2.521008403
+                        },
+                        {
+                            "name": "Focus Actuality",
+                            "size": 12.60504202
+                        },
+                        {
+                            "name": "Famous People",
+                            "size": 4.201680672
+                        },
+                        {
+                            "name": "Lots Followers",
+                            "size": 5.882352941
+                        },
+                        {
+                            "name": "Popular Friends",
+                            "size": 2.521008403
+                        },
+                        {
+                            "name": "All Above",
+                            "size": 26.05042017
+                        }
+                    ]
+                },
+                {
+                    "name": "Pisces",
+                    "size": 100,
+                    "children": [
+                        {
+                            "name": "Culture Leader",
+                            "size": 30.0
+                        },
+                        {
+                            "name": "Famous People",
+                            "size": 7.0
+                        },
+                        {
+                            "name": "Great Body",
+                            "size": 7.0
+                        },
+                        {
+                            "name": "Focus Actuality",
+                            "size": 19.0
+                        },
+                        {
+                            "name": "Famous People",
+                            "size": 8.0
+                        },
+                        {
+                            "name": "Lots Followers",
+                            "size": 0.0
+                        },
+                        {
+                            "name": "Popular Friends",
+                            "size": 6.0
+                        },
+                        {
+                            "name": "All Above",
+                            "size": 23.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Fire",
+            "children": [
+                {
+                    "name": "Sagittarius",
+                    "size": 100,
+                    "children": [
+                        {
+                            "name": "Culture Leader",
+                            "size": 28.40909091
+                        },
+                        {
+                            "name": "Famous People",
+                            "size": 5.681818182
+                        },
+                        {
+                            "name": "Great Body",
+                            "size": 5.681818182
+                        },
+                        {
+                            "name": "Focus Actuality",
+                            "size": 23.86363636
+                        },
+                        {
+                            "name": "Famous People",
+                            "size": 6.818181818
+                        },
+                        {
+                            "name": "Lots Followers",
+                            "size": 2.272727273
+                        },
+                        {
+                            "name": "Popular Friends",
+                            "size": 3.409090909
+                        },
+                        {
+                            "name": "All Above",
+                            "size": 23.86363636
+                        }
+                    ]
+                },
+                {
+                    "name": "Leo",
+                    "size": 100,
+                    "children": [
+                        {
+                            "name": "Culture Leader",
+                            "size": 32.9787234
+                        },
+                        {
+                            "name": "Famous People",
+                            "size": 7.446808511
+                        },
+                        {
+                            "name": "Great Body",
+                            "size": 2.127659574
+                        },
+                        {
+                            "name": "Focus Actuality",
+                            "size": 21.27659574
+                        },
+                        {
+                            "name": "Famous People",
+                            "size": 7.446808511
+                        },
+                        {
+                            "name": "Lots Followers",
+                            "size": 1.063829787
+                        },
+                        {
+                            "name": "Popular Friends",
+                            "size": 4.255319149
+                        },
+                        {
+                            "name": "All Above",
+                            "size": 23.40425532
+                        }
+                    ]
+                },
+                {
+                    "name": "Aries",
+                    "size": 100,
+                    "children": [
+                        {
+                            "name": "Culture Leader",
+                            "size": 37.27272727
+                        },
+                        {
+                            "name": "Famous People",
+                            "size": 5.454545455
+                        },
+                        {
+                            "name": "Great Body",
+                            "size": 2.727272727
+                        },
+                        {
+                            "name": "Focus Actuality",
+                            "size": 17.27272727
+                        },
+                        {
+                            "name": "Famous People",
+                            "size": 9.090909091
+                        },
+                        {
+                            "name": "Lots Followers",
+                            "size": 1.818181818
+                        },
+                        {
+                            "name": "Popular Friends",
+                            "size": 2.727272727
+                        },
+                        {
+                            "name": "All Above",
+                            "size": 23.63636364
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

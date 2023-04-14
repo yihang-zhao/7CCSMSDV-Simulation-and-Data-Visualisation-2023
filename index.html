@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Visualization</title>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="controls">
+        <h1>Personalized Visualization</h1>
+        <p>1. Select groups of zodiac signs to compare: </p>
+        <div class="checkbox-container"></div>
+        <button id="update-btn">Update Visualization</button>
+        <p></p>
+        <p>2. Select a colorblindness friendly colour scheme:</p>
+        <select id="color-scheme">
+            <option value="default">Default</option>
+            <option value="protanomaly">Red-Weak/Protanomaly</option>
+            <option value="deuteranomaly">Green-Weak/Deuteranomaly</option>
+            <option value="tritanomaly">Blue-Weak/Tritanomaly</option>
+            <option value="protanopia">Red-Blind/Protanopia</option>
+            <option value="deuteranopia">Green-Blind/Deuteranopia</option>
+            <option value="tritanopia">Blue-Blind/Tritanopia</option>
+            <option value="achromatopsia">Monochromacy/Achromatopsia</option>
+            <option value="blueConeMonochromacy">Blue Cone Monochromacy</option>
+        </select>
+        <p>3. Adjust text: </p>
+        <div>
+            <button id="decrease-text-size">Decrease text size</button>
+            <button id="increase-text-size">Increase text size</button>
+            <button id="bold-text">Bold text</button>
+            <button id="default-text">Default text</button>
+        </div>
+        <p>4. Leaf information will be displayed here: </p>
+        <div class="tooltip" style="position: absolute; opacity: 0; background-color: rgba(0, 0, 0, 0.7); color: white; padding: 8px; border-radius: 4px;"></div>
+    </div>
+    <div class="visualization"></div>
+    <script src="script.js"></script>
+</body>
+</html>
