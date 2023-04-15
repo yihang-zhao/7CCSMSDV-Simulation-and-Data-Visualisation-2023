@@ -19,6 +19,16 @@ async function main() {
     // Create checkboxes for children
     var checkboxContainer = d3.select(".checkbox-container");
     root.children.forEach((child, index) => {
+        if (index === 0){
+            index = 2
+        } else if (index === 1) {
+            index = 3
+        } else if (index === 2) {
+            index = 0
+        } else if (index === 3) {
+            index = 1
+        }
+
         checkboxContainer.append("input")
             .attr("type", "checkbox")
             .attr("id", `checkbox-${index}`)
@@ -284,6 +294,21 @@ async function main() {
                     })
                     .style("pointer-events", function(d) {
                         return d.depth <= 3 ? "auto" : "none";
+                    });
+            } else if (d.depth === 3) {
+                path
+                    .attr("opacity", function (d) {
+                        return d.depth <= 4 ? 1 : 0;
+                    })
+                    .style("pointer-events", function (d) {
+                        return d.depth <= 4 ? "auto" : "none";
+                    });
+                text
+                    .attr("opacity", function (d) {
+                        return d.depth <= 4 ? 1 : 0;
+                    })
+                    .style("pointer-events", function (d) {
+                        return d.depth <= 4 ? "auto" : "none";
                     });
             }
 
