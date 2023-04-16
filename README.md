@@ -1,4 +1,4 @@
-# Exploring the Relationship Between Zodiac Signs, Social Media Influencers, and Shopping Behaviors
+# Personalized Zodiac Insights Visualization
 ## Introduction
 This project focuses on examining the relationship between Zodiac signs, perceptions of social media influencers, and the impact of social media on shopping behaviors. The analysis is based on two datasets provided by Adam Halper, which can be found at the following links:
 ## Datasets
