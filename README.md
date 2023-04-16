@@ -1,7 +1,8 @@
 # Personalized Zodiac Insights Visualization
 ## Introduction
-This project focuses on examining the relationship between Zodiac signs, perceptions of social media influencers, and the impact of social media on shopping behaviors. The analysis is based on two datasets provided by Adam Halper, which can be found at the following links:
+This project focuses on examining the relationship between Zodiac signs, perceptions of social media influencers, and the impact of social media on shopping behaviors. Complete design and insights could be seen from https://miro.com/app/board/uXjVMVP_Drw=/?share_link_id=14153724503
 ## Datasets
+The analysis is based on two datasets provided by Adam Halper, which can be found at the following links:
 1. Social Influence on Shopping: https://data.world/ahalps/social-influence-on-shopping
 2. Online Influencer Marketing: https://data.world/ahalps/online-influencer-marketing
 
