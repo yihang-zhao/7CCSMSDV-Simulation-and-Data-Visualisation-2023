@@ -1,6 +1,5 @@
 /* Main styles for the visualization project */
 html, body {
-    height: 100%;
     margin: 0;
 }
 
@@ -16,6 +15,20 @@ body {
     background-color: #f7f7f7;
     padding: 0 20px;
     overflow-x: hidden;
+}
+
+/* Configure layout and font styles for the description page body */
+.description-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    background-color: #f7f7f7;
+    padding: 0 20px;
+    min-height: 100vh; /* Use 100vh to set the minimum height to the full viewport height */
 }
 
 /* Style the controls container */

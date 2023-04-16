@@ -75,9 +75,6 @@ async function main() {
     // Render the visualization initially
     renderVisualization(root);
 
-    // Update the visualization when the "Update Visualization" button is clicked
-    document.getElementById("update-btn").addEventListener("click", updateVisualization);
-
     // The renderVisualization function is responsible for drawing the Sunburst chart based on the provided root node.
     function renderVisualization(root) {
         var x = d3.scale.linear().range([0, 2 * Math.PI]);
@@ -242,12 +239,6 @@ async function main() {
                 .style("fill", "#f7f7f7") // Set this value to your default text color
                 .style("text-shadow", "none");
         }
-
-        // Interactions with the visualization are managed through event listeners and callbacks.
-        document.getElementById("increase-text-size").addEventListener("click", increaseTextSize);
-        document.getElementById("decrease-text-size").addEventListener("click", decreaseTextSize);
-        document.getElementById("bold-text").addEventListener("click", boldtext);
-        document.getElementById("default-text").addEventListener("click", defaulttext);
 
         function onMouseOver(d) {
             var tooltip = d3.select(".tooltip");
@@ -421,8 +412,28 @@ async function main() {
             }
         }
 
+        // Update the visualization when the "Update Visualization" button is clicked
+        document.getElementById("update-btn").addEventListener("click", updateVisualization);
+
+        // Interactions with the visualization are managed through event listeners and callbacks.
+        document.getElementById("increase-text-size").addEventListener("click", increaseTextSize);
+
+        document.getElementById("decrease-text-size").addEventListener("click", decreaseTextSize);
+
+        document.getElementById("bold-text").addEventListener("click", boldtext);
+
+        document.getElementById("default-text").addEventListener("click", defaulttext);
+
         document.getElementById("color-scheme").addEventListener("change", function () {
             updateColorScheme(this.value);
+        });
+
+        document.getElementById('go-to-description').addEventListener('click', function() {
+            window.location.href = 'description.html';
+        });
+
+        document.getElementById('go-to-visualization').addEventListener('click', function() {
+            window.location.href = 'index.html';
         });
 
         d3.select(self.frameElement).style("height", height + "px");

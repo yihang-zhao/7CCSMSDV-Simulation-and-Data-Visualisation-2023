@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zodiac Insights Visualization - Description</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="description-body">
+    <div class="description">
+        <button id="go-to-visualization">Go to Visualization</button>
+        <h1>Zodiac Insights Visualization - Description</h1>
+        <h2>Data Processing and Acknowledgements</h2>
+        <p>
+            In this project, I aimed to create an interactive visualization of Zodiac sign insights based on demographic data from various sources. The data processing pipeline involved several crucial steps to ensure the final visualization accurately represents the desired information and relationships.
+            <ul>
+                <li>1. Data extraction and cleaning: The raw dataset contained a diverse range of demographic attributes for participants. I focused specifically on the Zodiac sign groups, extracting relevant rows and simplifying the segment name column by retaining only the Zodiac sign names.</li>
+                <li>2. Data consolidation and categorization: I analyzed and filtered rows from a second dataset containing questions pertaining to the most important traits of influencers. I identified eight distinct answer types and combined similar answers (e.g., 'a famous person' and 'They are famous so people like to follow') into a single category, such as 'Famous person'. I then recalculated the percentages for each answer within each Zodiac sign group to ensure accurate representation.</li>
+                <li>3. Data transformation and hierarchical structuring: To create a sunburst graph for the visualization, I merged the processed datasets and converted them into a hierarchical JSON format. The structure comprised multiple depth levels: depth 0 representing Zodiac signs, depth 1 denoting the four Zodiac elements (Earth, Air, Fire, and Water), depth 2 specifying each Zodiac sign within an element, depth 3 differentiating between social media preferences and influencer preferences, and depth 4 detailing the answer categories for the selected aspect (7 types for influencers and 5 types for social media).</li>
+            </ul>
+            By meticulously processing and transforming the data, I created a robust foundation for my Zodiac Insights Visualization, enabling users to explore and compare various aspects of Zodiac signs with ease and accuracy.
+        </p>
+        <p>
+            The data used in this project has been collected from various reliable sources and processed to create an insightful and interactive visualization. I'd like to express my gratitude to the following data sources:
+            <ul>
+                <li>1. Social Influence on Shopping: https://data.world/ahalps/social-influence-on-shopping</li>
+                <li>2. Online Influencer Marketing: https://data.world/ahalps/online-influencer-marketing</li>
+            </ul>
+        </p>
+        <h2>User Handbook</h2>
+        <p>
+            To ensure a smooth user experience, follow these steps:
+            <ol>
+                <li>Select groups of zodiac signs to compare.</li>
+                <li>Choose a colorblindness-friendly color scheme if necessary.</li>
+                <li>Adjust text size and style for better readability.</li>
+                <li>Explore the visualization and view detailed information about each zodiac sign.</li>
+            </ol>
+        </p>
+
+        <h2>Copyright Certification</h2>
+        <p>
+            &copy; 2023 Yihang Zhao. All rights reserved.
+        </p>
+        <p>
+            MIT License
+
+            Copyright (c) 2023 Yihang Zhao
+
+            Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+            The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+            THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        </p>
+    </div>
+    <!-- Add event listener for the go-to-visualization button -->
+    <script>
+        document.getElementById('go-to-visualization').addEventListener('click', function() {
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>
