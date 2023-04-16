@@ -2,18 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Visualization</title>
+    <!-- Title of the project -->
+    <title>Zodiac Insights Visualization</title>
+
+    <!-- Import D3.js library -->
     <script src="https://d3js.org/d3.v3.min.js"></script>
+
+    <!-- Import custom CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Configure responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <div class="controls">
-        <h1>Personalized Visualization</h1>
+        <h1>Personalized Zodiac Insights Visualization</h1>
+        <!-- Step 1: Allow users to select zodiac sign groups -->
         <p>1. Select groups of zodiac signs to compare: </p>
         <div class="checkbox-container"></div>
         <button id="update-btn">Update Visualization</button>
         <p></p>
+
+        <!-- Step 2: Allow users to choose a colorblindness-friendly color scheme -->
         <p>2. Select a colorblindness friendly colour scheme:</p>
         <select id="color-scheme">
             <option value="default">Default</option>
@@ -26,6 +36,8 @@
             <option value="achromatopsia">Monochromacy/Achromatopsia</option>
             <option value="blueConeMonochromacy">Blue Cone Monochromacy</option>
         </select>
+
+        <!-- Step 3: Allow users to adjust text size and style -->
         <p>3. Adjust text: </p>
         <div>
             <button id="decrease-text-size">Decrease text size</button>
@@ -33,10 +45,17 @@
             <button id="bold-text">Bold text</button>
             <button id="default-text">Default text</button>
         </div>
+
+        <!-- Step 4: Display information about the selected leaf -->
         <p>4. Leaf information will be displayed here: </p>
         <div class="tooltip" style="position: absolute; opacity: 0; background-color: rgba(0, 0, 0, 0.7); color: white; padding: 8px; border-radius: 4px;"></div>
     </div>
+
+    <!-- Visualization container -->
     <div class="visualization"></div>
+
+    <!-- Import custom JavaScript -->
     <script src="script.js"></script>
+
 </body>
 </html>

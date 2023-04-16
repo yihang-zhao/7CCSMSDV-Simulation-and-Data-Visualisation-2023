@@ -1,11 +1,23 @@
+// This JavaScript file is an implementation of a D3 Sunburst visualization that fetches data from a JSON file.
+// The visualization provides several interactive features, including:
+// - Checkbox filtering for root's children
+// - Updating the visualization based on selected children
+// - Changing color schemes for colorblind users
+// - Increasing and decreasing text size
+// - Bold and reset text styles
+// - Clickable arcs for drilling down into deeper levels of the hierarchy
+
+// The getData function fetches data from the JSON file and returns the parsed JSON data.
 async function getData() {
     const response = await fetch('data/data.json');
     const jsonData = await response.json();
     return jsonData;
 }
 
+// The main function is the entry point of the script, where the visualization is created and rendered.
 async function main() {
     var root = await getData();
+
     var width = window.innerWidth,
         height = window.innerHeight,
         radius = Math.min(width, height) * 0.48;
@@ -55,6 +67,7 @@ async function main() {
         };
         // Clear the existing visualization
         svg.selectAll("*").remove();
+
         // Render the new visualization
         renderVisualization(newRoot);
     }
@@ -65,11 +78,16 @@ async function main() {
     // Update the visualization when the "Update Visualization" button is clicked
     document.getElementById("update-btn").addEventListener("click", updateVisualization);
 
+    // The renderVisualization function is responsible for drawing the Sunburst chart based on the provided root node.
     function renderVisualization(root) {
         var x = d3.scale.linear().range([0, 2 * Math.PI]);
+
         var y = d3.scale.sqrt()
             .range([0, radius])
+
         var color = d3.scale.category20();
+
+        // The Sunburst visualization uses D3's partition layout to calculate the arc sizes and positions based on the hierarchical data.
         var partition = d3.layout.partition()
             .value(function (d) {
                 return d.size;
@@ -91,6 +109,7 @@ async function main() {
 
         var g = svg.selectAll("g")
             .data(partition.nodes(root)).enter().append("g");
+
         var path = g.append("path").attr("d", arc)
             .style("fill", function (d) {
                 return color((d.children ? d : d.parent).name);
@@ -128,6 +147,7 @@ async function main() {
                 return d.depth <= 1 ? "auto" : "none";
             });
 
+        // The visualization supports different color schemes to cater to users with color vision deficiencies.
         // Color scale for Protanomaly (Red-Weak)
         var protanomalyColor = d3.scale.ordinal().range([
             "#009E73",
@@ -200,6 +220,7 @@ async function main() {
             "#999999",
         ]);
 
+        // The text size and style can be adjusted using the provided buttons, and the arcs can be clicked to drill down into deeper levels of the hierarchy.
         function increaseTextSize() {
             textSize = Number(textSize) + 1
             text.style("font-size", textSize);
@@ -222,6 +243,7 @@ async function main() {
                 .style("text-shadow", "none");
         }
 
+        // Interactions with the visualization are managed through event listeners and callbacks.
         document.getElementById("increase-text-size").addEventListener("click", increaseTextSize);
         document.getElementById("decrease-text-size").addEventListener("click", decreaseTextSize);
         document.getElementById("bold-text").addEventListener("click", boldtext);
@@ -334,6 +356,7 @@ async function main() {
 
         }
 
+        // The script also includes helper functions for handling arc animations and updating the color scheme.
         function arcTween(d) {
             var xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),
                 yd = d3.interpolate(y.domain(), [d.y, 1]),

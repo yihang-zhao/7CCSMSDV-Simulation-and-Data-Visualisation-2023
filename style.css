@@ -1,8 +1,10 @@
+/* Main styles for the visualization project */
 html, body {
     height: 100%;
     margin: 0;
 }
 
+/* Configure layout and font styles for the body */
 body {
     display: flex;
     justify-content: space-between;
@@ -16,6 +18,7 @@ body {
     overflow-x: hidden;
 }
 
+/* Style the controls container */
 .controls {
     min-width: 400px;
     padding: 20px;
@@ -26,6 +29,7 @@ body {
     height: 700px;
 }
 
+/* Style the visualization container */
 .visualization {
     display: flex;
     justify-content: center;
@@ -34,31 +38,37 @@ body {
     height: 100%;
 }
 
+/* Style the header */
 h1 {
     text-align: center;
     color: #444;
 }
 
+/* Add margin for paragraphs */
 p {
     margin-bottom: 15px;
 }
 
+/* Arrange checkboxes */
 .checkbox-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
+/* Style label */
 .checkbox-container label {
     display: inline-block;
     margin-bottom: 10px;
 }
 
+/* Add cursor styles for buttons and select elements */
 button,
 select {
     cursor: pointer;
 }
 
+/* Style buttons */
 button {
     background-color: #007bff;
     color: #fff;
@@ -73,14 +83,17 @@ button {
     box-sizing: border-box;
 }
 
+/* Style button hover state */
 button:hover {
     background-color: #0056b3;
 }
 
+/* Style button active state */
 button:active {
     background-color: #004085;
 }
 
+/* Style select elements */
 select {
     padding: 5px 10px;
     border: 1px solid #ddd;
@@ -94,10 +107,12 @@ select {
     box-sizing: border-box;
 }
 
+/* Style select focus state */
 select:focus {
     border-color: #007bff;
 }
 
+/* Arrange text adjustment buttons */
 .text-adjust-buttons {
     display: flex;
     justify-content: space-between;
@@ -105,15 +120,18 @@ select:focus {
     flex-wrap: wrap;
 }
 
+/* Style tooltip */
 .tooltip {
     pointer-events: none;
 }
 
+/* Style path elements */
 path {
     stroke: #ffffff;
     fill-rule: evenodd;
 }
 
+/* Media queries for responsiveness */
 @media (max-width: 1400px) {
     .controls {
         min-width: 300px;
@@ -146,3 +164,9 @@ path {
         width: 100%;
     }
 }
+
+/* End of CSS file */
+
+/*
+This CSS file contains styles for the visualization project. It includes general styles for the body, as well as specific styles for the controls and visualization containers. Additionally, it provides styles for buttons, select elements, checkboxes, labels, and tooltips. It also contains media queries to ensure the project is responsive and adapts to different screen sizes.
+*/
