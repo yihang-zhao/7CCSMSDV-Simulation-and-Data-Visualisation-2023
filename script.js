@@ -412,6 +412,38 @@ async function main() {
             }
         }
 
+        function displayAllDepths() {
+            path
+                .attr("opacity", 1)
+                .style("pointer-events", "auto");
+            text
+                .attr("opacity", function(d) {
+                    return d.depth !== 4 ? 1 : 0;
+                })
+                .style("pointer-events", "auto")
+        }
+
+        function resetView() {
+            path
+                .attr("opacity", function(d) {
+                    return d.depth <= 1 ? 1 : 0;
+                })
+                .style("pointer-events", function(d) {
+                    return d.depth <= 1 ? "auto" : "none";
+                });
+            text
+                .attr("opacity", function(d) {
+                    return d.depth <= 1 ? 1 : 0;
+                })
+                .style("pointer-events", function(d) {
+                    return d.depth <= 1 ? "auto" : "none";
+                });
+        }
+
+        document.getElementById("display-all-depths").addEventListener("click", displayAllDepths);
+
+        document.getElementById("reset-view").addEventListener("click", resetView);
+
         // Update the visualization when the "Update Visualization" button is clicked
         document.getElementById("update-btn").addEventListener("click", updateVisualization);
 
