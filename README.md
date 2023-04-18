@@ -5,9 +5,12 @@ This project focuses on examining the relationship between Zodiac signs, percept
 ## Data Processing and Acknowledgements
 In this project, I aimed to create an interactive visualization of Zodiac sign insights based on demographic data from various sources. The data processing pipeline involved several crucial steps to ensure the final visualization accurately represents the desired information and relationships.
 
-1. Use Python:
+### 1. Use Python:
+
 1.1 Data extraction and cleaning: The raw dataset contained a diverse range of demographic attributes for participants. I focused specifically on the Zodiac sign groups, extracting relevant rows and simplifying the segment name column by retaining only the Zodiac sign names.
+
 1.2 Data consolidation and categorization: I analyzed and filtered rows from a second dataset containing questions pertaining to the most important traits of influencers. I identified eight distinct answer types and combined similar answers (e.g., 'a famous person' and 'They are famous so people like to follow') into a single category, such as 'Famous person'. I then recalculated the percentages for each answer within each Zodiac sign group to ensure accurate representation.
+
 1.3 Data transformation and hierarchical structuring: To create a sunburst graph for the visualization, I merged the processed datasets and converted them into a hierarchical JSON format. The structure comprised multiple depth levels: depth 0 representing Zodiac signs, depth 1 denoting the four Zodiac elements (Earth, Air, Fire, and Water), depth 2 specifying each Zodiac sign within an element, depth 3 differentiating between social media preferences and influencer preferences, and depth 4 detailing the answer categories for the selected aspect (7 types for influencers and 5 types for social media).
 
 <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
@@ -16,7 +19,8 @@ In this project, I aimed to create an interactive visualization of Zodiac sign i
   <img src="./data_preprocess/code_snippet_3.jpeg" alt="Image description" style="height: 200px; width: auto;">
 </div>
 
-2. Use D3:
+### 2. Use D3:
+
 2.1 Fetch and parse the JSON data:
 The getData function fetches data from the 'data/data.json' file using the fetch API and then parses the JSON data using response.json(). This function returns the parsed JSON data.
 
