@@ -16,6 +16,13 @@ In this project, I aimed to create an interactive visualization of Zodiac sign i
 2. Data consolidation and categorization: I analyzed and filtered rows from a second dataset containing questions pertaining to the most important traits of influencers. I identified eight distinct answer types and combined similar answers (e.g., 'a famous person' and 'They are famous so people like to follow') into a single category, such as 'Famous person'. I then recalculated the percentages for each answer within each Zodiac sign group to ensure accurate representation.
 3. Data transformation and hierarchical structuring: To create a sunburst graph for the visualization, I merged the processed datasets and converted them into a hierarchical JSON format. The structure comprised multiple depth levels: depth 0 representing Zodiac signs, depth 1 denoting the four Zodiac elements (Earth, Air, Fire, and Water), depth 2 specifying each Zodiac sign within an element, depth 3 differentiating between social media preferences and influencer preferences, and depth 4 detailing the answer categories for the selected aspect (7 types for influencers and 5 types for social media).
 By meticulously processing and transforming the data, I created a robust foundation for my Zodiac Insights Visualization, enabling users to explore and compare various aspects of Zodiac signs with ease and accuracy.
+
+<div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+  <img src="./data_preprocess/code_snippet_1.jpeg" alt="Image description" style="height: 200px; width: auto;">
+  <img src="./data_preprocess/code_snippet_2.jpeg" alt="Image description" style="height: 200px; width: auto;">
+  <img src="./data_preprocess/code_snippet_3.jpeg" alt="Image description" style="height: 200px; width: auto;">
+</div>
+
 The data used in this project has been collected from various reliable sources and processed to create an insightful and interactive visualization. I'd like to express my gratitude to the following data sources:
 
 1. Social Influence on Shopping: https://data.world/ahalps/social-influence-on-shopping
