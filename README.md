@@ -1,27 +1,39 @@
 # Personalized Zodiac Insights Visualization
 ## Introduction
 This project focuses on examining the relationship between Zodiac signs, perceptions of social media influencers, and the impact of social media on shopping behaviors. Complete design and insights could be seen from https://miro.com/app/board/uXjVMVP_Drw=/?share_link_id=14153724503
-## Datasets
-The analysis is based on two datasets provided by Adam Halper, which can be found at the following links:
-1. Social Influence on Shopping: https://data.world/ahalps/social-influence-on-shopping
-2. Online Influencer Marketing: https://data.world/ahalps/online-influencer-marketing
-
-## Goal
-The primary goal of this research is to explore if there are any similarities or differences between Zodiac signs in terms of their preferences and perceptions of social media influencers and how these preferences influence their shopping behaviors.
 
 ## Data Processing and Acknowledgements
 In this project, I aimed to create an interactive visualization of Zodiac sign insights based on demographic data from various sources. The data processing pipeline involved several crucial steps to ensure the final visualization accurately represents the desired information and relationships.
 
-1. Data extraction and cleaning: The raw dataset contained a diverse range of demographic attributes for participants. I focused specifically on the Zodiac sign groups, extracting relevant rows and simplifying the segment name column by retaining only the Zodiac sign names.
-2. Data consolidation and categorization: I analyzed and filtered rows from a second dataset containing questions pertaining to the most important traits of influencers. I identified eight distinct answer types and combined similar answers (e.g., 'a famous person' and 'They are famous so people like to follow') into a single category, such as 'Famous person'. I then recalculated the percentages for each answer within each Zodiac sign group to ensure accurate representation.
-3. Data transformation and hierarchical structuring: To create a sunburst graph for the visualization, I merged the processed datasets and converted them into a hierarchical JSON format. The structure comprised multiple depth levels: depth 0 representing Zodiac signs, depth 1 denoting the four Zodiac elements (Earth, Air, Fire, and Water), depth 2 specifying each Zodiac sign within an element, depth 3 differentiating between social media preferences and influencer preferences, and depth 4 detailing the answer categories for the selected aspect (7 types for influencers and 5 types for social media).
-By meticulously processing and transforming the data, I created a robust foundation for my Zodiac Insights Visualization, enabling users to explore and compare various aspects of Zodiac signs with ease and accuracy.
+1. Use Python:
+1.1 Data extraction and cleaning: The raw dataset contained a diverse range of demographic attributes for participants. I focused specifically on the Zodiac sign groups, extracting relevant rows and simplifying the segment name column by retaining only the Zodiac sign names.
+1.2 Data consolidation and categorization: I analyzed and filtered rows from a second dataset containing questions pertaining to the most important traits of influencers. I identified eight distinct answer types and combined similar answers (e.g., 'a famous person' and 'They are famous so people like to follow') into a single category, such as 'Famous person'. I then recalculated the percentages for each answer within each Zodiac sign group to ensure accurate representation.
+1.3 Data transformation and hierarchical structuring: To create a sunburst graph for the visualization, I merged the processed datasets and converted them into a hierarchical JSON format. The structure comprised multiple depth levels: depth 0 representing Zodiac signs, depth 1 denoting the four Zodiac elements (Earth, Air, Fire, and Water), depth 2 specifying each Zodiac sign within an element, depth 3 differentiating between social media preferences and influencer preferences, and depth 4 detailing the answer categories for the selected aspect (7 types for influencers and 5 types for social media).
 
 <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
   <img src="./data_preprocess/code_snippet_1.jpeg" alt="Image description" style="height: 200px; width: auto;">
   <img src="./data_preprocess/code_snippet_2.jpeg" alt="Image description" style="height: 200px; width: auto;">
   <img src="./data_preprocess/code_snippet_3.jpeg" alt="Image description" style="height: 200px; width: auto;">
 </div>
+
+2. Use D3:
+2.1 Fetch and parse the JSON data:
+The getData function fetches data from the 'data/data.json' file using the fetch API and then parses the JSON data using response.json(). This function returns the parsed JSON data.
+
+2.2 Create a hierarchical layout:
+D3 uses a partition layout to create a hierarchical structure for the Sunburst chart. The partition layout is created using d3.layout.partition(), and it computes the arc sizes and positions based on the hierarchical data. The layout is configured with a value accessor function that returns the size attribute of each data node.
+
+2.3 Bind the data to DOM elements:
+The svg.selectAll("g") line selects all "g" elements within the SVG container, and the data(partition.nodes(root)) binds the hierarchical data nodes (computed by the partition layout) to these elements. The enter().append("g") creates new "g" elements for each data node that doesn't have a corresponding "g" element.
+
+2.4 Create and style the arcs:
+Using the data-bound "g" elements, the code appends a "path" element for each data node and sets the "d" attribute using the arc function. The arc function is created using d3.svg.arc() and is configured with start angle, end angle, inner radius, and outer radius. The arcs are also styled with fill colors and event listeners for interactivity.
+
+2.5 Create and style the text labels:
+The code appends a "text" element for each data node and positions it using the "x", "dx", "dy", and "transform" attributes. The text content is set using the name attribute of the data node, and the text is styled with fill color, font size, and other properties.
+
+2.6 Interactivity and updates:
+The code provides several functions to update the visualization based on user interactions, such as clicking on arcs, changing the color scheme, and adjusting text size. These functions usually involve changing the attributes or styles of the DOM elements based on the updated data or user inputs.
 
 The data used in this project has been collected from various reliable sources and processed to create an insightful and interactive visualization. I'd like to express my gratitude to the following data sources:
 
