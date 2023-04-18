@@ -3,6 +3,29 @@ html, body {
     margin: 0;
 }
 
+/* Style the "About Me" link */
+.aboutme {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.aboutme a {
+    color: #007bff;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.aboutme a:hover {
+    text-decoration: underline;
+}
+
+.aboutme a:hover {
+    text-decoration: underline;
+}
+
 /* Configure layout and font styles for the body */
 body {
     display: flex;
@@ -39,7 +62,7 @@ body {
     border-radius: 5px;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    height: 820px;
+    height: 840px;
 }
 
 /* Style the visualization container */
@@ -144,6 +167,18 @@ path {
     fill-rule: evenodd;
 }
 
+.image-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.image-row img {
+    max-height: 200px;
+    width: auto;
+}
+
 /* Media queries for responsiveness */
 @media (max-width: 1400px) {
     .controls {
@@ -154,7 +189,7 @@ path {
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     .controls {
         min-width: 300px;
     }
@@ -175,6 +210,13 @@ path {
     }
     .visualization {
         width: 100%;
+    }
+    /* Set "About Me" link position at the top of the page */
+    .aboutme {
+        position: static;
+        display: block;
+        text-align: center;
+        padding: 10px 0;
     }
 }
 
