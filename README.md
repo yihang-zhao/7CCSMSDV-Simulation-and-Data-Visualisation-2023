@@ -47,7 +47,7 @@ The data used in this project has been collected from various reliable sources a
 1. Social Influence on Shopping: https://data.world/ahalps/social-influence-on-shopping
 2. Online Influencer Marketing: https://data.world/ahalps/online-influencer-marketing
 
-### Acknowledgements
+### 3. Acknowledgements
 
 I would like to express my gratitude to Adam Halper for providing the two datasets that have been instrumental in this research. These datasets have contributed significantly to the analysis and understanding of the relationship between Zodiac signs, social media influencers, and shopping behaviors.
 
