@@ -1,8 +1,11 @@
 # Personalized Zodiac Insights Visualization
+
 ## Introduction
+
 This project focuses on examining the relationship between Zodiac signs, perceptions of social media influencers, and the impact of social media on shopping behaviors. Complete design and insights could be seen from https://miro.com/app/board/uXjVMVP_Drw=/?share_link_id=14153724503
 
 ## Data Processing and Acknowledgements
+
 In this project, I aimed to create an interactive visualization of Zodiac sign insights based on demographic data from various sources. The data processing pipeline involved several crucial steps to ensure the final visualization accurately represents the desired information and relationships.
 
 ### 1. Use Python:
@@ -44,20 +47,32 @@ The data used in this project has been collected from various reliable sources a
 1. Social Influence on Shopping: https://data.world/ahalps/social-influence-on-shopping
 2. Online Influencer Marketing: https://data.world/ahalps/online-influencer-marketing
 
-## Visualization
+### Acknowledgements
 
-The project features an interactive sunburst chart that presents the data in a hierarchical structure, making it easy to explore and analyze the relationships between the variables. The chart allows users to navigate through different layers of data, providing insights into the preferences and behaviors of each Zodiac sign and their respective groups.
+I would like to express my gratitude to Adam Halper for providing the two datasets that have been instrumental in this research. These datasets have contributed significantly to the analysis and understanding of the relationship between Zodiac signs, social media influencers, and shopping behaviors.
+
+## Demonstration
+
+Hello everyone, I am excited to introduce my Zodiac Insights Visualization web Application, an interactive exploration of zodiac data related to social media influencers and the impact on shopping behavior across social platforms.
+
+First, we utilized a dataset from data.world, through a pipeline involving extraction and cleaning, merging and categorization, transformation, and stratification, we created a strong foundation for our sunburst chart. The 0th layer of the sunburst chart explains the research subjects, the 1st layer is the four zodiac groups, the 2nd layer is the three zodiac signs within each group, and the 3rd layer is the two research focuses for each zodiac sign: 1. their opinion on media influencers, 2. the social media that influences their shopping behavior. The 4th layer represents the proportion of answers for each research focus, reflecting the characteristics of each zodiac sign. 
+
+Let's discuss the design principles behind the web application. I chose a sunburst chart for visualization because it can intuitively display multi-level data and effectively present the hierarchy and interactivity of the data. Our goal was to create a user-friendly interface, with adaptive and responsive design for four screen sizes, including mobile screens. 
+
+Users can manually adjust the text size or bold the text for easier reading based on their screen size, or revert to the default settings if adjustments are incorrect. 
+
+I ensured my design is accessible to people with different types of color vision deficiencies and provided customization options. Users can choose from colorblind-friendly color schemes, with eight different schemes available for the eight types of colorblindness. I also added transition animations for each button click, giving the customization module a modern aesthetic. 
+
+Now, let's dive into the demonstration of this web application. After exploring a portion of the subcategories, users may be particularly interested in one zodiac group. They can remove all other groups and display only the one they are interested in, using the display all depth button to access information for every member of the group. Users can discover similarities between the characteristics of the three zodiac signs in the group concerning their responses to the research questions, as well as explore whether there is a connection between their views on social media influencers and their susceptibility to the influence of different social media on their shopping behaviour. Afterward, users can add new zodiac groups to explore the differences or similarities between different groups. Finally, by clicking reset view, they can return to the normal interaction mode and begin a new exploration. 
+
+That's my overall design, thank you.
 
 ## Features
 
-Interactive sunburst chart for easy exploration of the data
-Personalized visualization toolbar allowing users to filter and customize the chart
-Colorblindness-friendly color options
-Dynamic text size and style adjustments for improved accessibility
-Detailed tooltips displaying specific information for each data point
-Preprocessing and Data Transformation
-The datasets have undergone preprocessing and transformation to create a suitable hierarchical structure for the sunburst chart. This includes filtering relevant rows, combining similar answers, and recalculating percentages for each group. The final JSON file consists of a depth-based structure that represents Zodiac signs, Zodiac groups, preferences, and answer types.
+1. Interactive sunburst chart for easy exploration of the data
+2. Personalized visualization toolbar allowing users to filter and customize the chart
+3. Colorblindness-friendly color options
+4. Dynamic text size and style adjustments for improved accessibility
+5. Detailed tooltips displaying specific information for each data point
+6. Filter groups to compare at once
 
-## Acknowledgements
-
-I would like to express my gratitude to Adam Halper for providing the two datasets that have been instrumental in this research. These datasets have contributed significantly to the analysis and understanding of the relationship between Zodiac signs, social media influencers, and shopping behaviors.
